@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div class="api-section">
+
+<!-- bootstrap card -->
+    <div class="card api-section">
         <h1>
-            Part 1: Random Dog Generator
+            Part 1: Random Good Boy/Girl Generator
         </h1>
         <div class="api-content">
-            [INSERT RANDOM DOG GENERATOR HERE]
+        <img><br><br>
+        <button type="button" class="btn btn-outline-primary">Get Dog!</button>
         </div>
     </div>
 
@@ -27,7 +29,22 @@
             Part 2: Weather App
         </h1>
         <div class="api-content">
-            [INSERT WEATHER APP HERE]
+
+            <div class="form-outline" id="weather-form">
+            <form id="weatherform">
+                <label class="form-label" for="city-input">
+                    <input type="text" id="city-input" class="form-control" placeholder="Enter City" />
+                </label>
+                <button type="submit" class="btn btn-outline-primary">Get Weather!</button>
+            </form>
+
+            <div id="weather-info" style="color: black; font-size: 30px;">
+                <div id="city"></div>
+                <div id="temp"></div>
+                <div id="wind"></div>
+                <div id="desc"></div>
+            </div>
+            </div>
         </div>
     </div>
 
