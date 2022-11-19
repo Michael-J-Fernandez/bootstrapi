@@ -13,22 +13,25 @@
 </head>
 <body>
 
-<!-- bootstrap card -->
-    <div class="card api-section">
-        <h1>
-            Part 1: Random Good Boy/Girl Generator
-        </h1>
-        <div class="api-content">
-        <img><br><br>
-        <button type="button" class="btn btn-outline-primary">Get Dog!</button>
+    <!-- I had to remove 'api-section' and 'api-content' as they were messing up my card layout. Sorry! -->
+    <div class="card text-center">
+        <div class="card-header">
+            <h1 class="card-title">Part 1: Random Good Boy/Girl Generator</h1>
+        </div>
+        <div class="card-body">
+            <img>
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-primary">Get Dog!</button>
         </div>
     </div>
-:<!--  -->
-    <div class="api-section">
-        <h1>
+
+
+    <div class="api-section card">
+        <h1 class="card-header">
             Part 2: Weather App
         </h1>
-        <div class="api-content">
+        <div class="api-content card-body">
 
             <div class="form-outline" id="weather-form">
             <form id="weatherform">
@@ -38,7 +41,7 @@
                 <button type="submit" class="btn btn-outline-primary">Get Weather!</button>
             </form>
 
-            <div id="weather-info" style="color: black; font-size: 30px;">
+            <div class="card-body" id="weather-info" style="color: black; font-size: 30px;">
                 <div id="city"></div>
                 <div id="temp"></div>
                 <div id="wind"></div>
